@@ -17,3 +17,16 @@ variable "external_port" {
 	type = number
 	default = 8080
 }
+
+variable "client_count" {
+  type        = number
+  default     = 3
+  description = "Nombre de conteneurs clients à déployer"
+}
+
+
+variable "server_names" {
+  type        = set(string)
+  default     = ["Todd", "James", "Alice"]
+}
+
